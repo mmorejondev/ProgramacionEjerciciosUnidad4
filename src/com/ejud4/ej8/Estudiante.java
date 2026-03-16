@@ -4,6 +4,7 @@ public class Estudiante implements Comparable<Estudiante> {
 
 	private String nombre;
 	private Double nota;
+	
 	public Estudiante(String nombre, Double nota) {
 		this.nombre = nombre;
 		this.nota = nota;
@@ -28,9 +29,9 @@ public class Estudiante implements Comparable<Estudiante> {
 	public int compareTo(Estudiante o) {
 		int resultado=0;
 		if (this.nota>o.nota) {
-			resultado=-1;
-		}else if (o.nota>this.nota){
 			resultado=1;
+		}else if (o.nota>this.nota){
+			resultado=-1;
 		}
 		//Si la comparación se hubiese requerido por nombre haríamos lo siguiente
 		/*if (this.nombre.compareTo(o.nombre)>0) {
