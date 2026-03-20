@@ -13,6 +13,7 @@ public class SistemaIncidencias {
 	List<Incidencia> incidenciasResueltas;
 	Scanner teclado = new Scanner(System.in);
 	
+	
 	public void insertarDatosPrueba() {
 		Incidencia i1 = new Incidencia("Error en el login");
         Incidencia i2 = new Incidencia("Fallo en la base de datos");
