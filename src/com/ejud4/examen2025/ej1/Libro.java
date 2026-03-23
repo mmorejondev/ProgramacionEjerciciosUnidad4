@@ -10,6 +10,7 @@ public class Libro {
      String genero;
        
      
+     
 	 public Libro(String titulo, String autor, int anyoPublicacion, String genero) {
 		this.id = autoId;
 		autoId++;
@@ -18,6 +19,12 @@ public class Libro {
 		this.anyoPublicacion = anyoPublicacion;
 		this.genero = genero;
 	}
+	 
+	 public int getId() {
+		 return this.id;
+	 }
+	 
+	 
 	 public String getTitulo() {
 		 return titulo;
 	 }
@@ -41,6 +48,12 @@ public class Libro {
 	 }
 	 public void setGenero(String genero) {
 		 this.genero = genero;
+	 }
+
+	 @Override
+	 public String toString() {
+		return "[id=" + id + ", titulo=" + titulo + ", autor=" + autor + ", anyoPublicacion=" + anyoPublicacion
+				+ ", genero=" + genero + "]";
 	 }
  
      
